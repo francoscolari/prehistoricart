@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prehistoricart</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=PT+Sans"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <div id="header" class="header-wrapper">
+      <video autoplay loop muted playsinline id="bg-video">
+        <source src="assets/videos/lava.mp4" type="video/mp4" />
+      </video>
+
+      <div class="header-wrapper-inner">
+        <section class="top clearfix">
+          <div class="pull-left">
+            <h1>
+              <a class="logo" href="#">
+                <img
+                  src="assets/images/logo-texto.svg"
+                  alt="Prehistoricart Logo Letras"
+                />
+              </a>
+            </h1>
+          </div>
+        </section>
+
+        <section class="center">
+          <div class="slogan">
+            <img
+              src="assets/images/logo-final.svg"
+              alt="Logo completo Prehistoricart"
+            />
+          </div>
+          <div class="secondary-slogan" style="color: white">
+            Trading Card Game
+          </div>
+          <button id="playVideoBtn" class="btn-big-cyan">PLAY</button>
+        </section>
+
+        <section class="bottom">
+          <a id="scrollToContent" href="#">
+            <img src="assets/images/arrow_down.png" alt="" />
+          </a>
+        </section>
+      </div>
+    </div>
+
+    <!-- SECCIÓN MAZOS -->
+    <div class="content-block" id="mazos">
+      <div class="container text-center">
+        <header class="block-heading clearfix">
+          <h1>Mazos Disponibles</h1>
+          <p>Elige tu camino en el mundo prehistórico.</p>
+        </header>
+
+        <section class="block-body">
+          <div class="row">
+            <!-- MAZO TERRA -->
+            <div class="col-sm-4">
+              <div class="deck-card">
+                <h2>Mazo Terra</h2>
+                <div
+                  id="carouselTerra"
+                  class="carousel slide"
+                  data-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img
+                        src="assets/images/2.jpeg"
+                        class="img-responsive center-block"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="assets/images/3a.jpeg"
+                        class="img-responsive center-block"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Controles -->
+                  <a
+                    class="left carousel-control"
+                    href="#carouselTerra"
+                    data-slide="prev"
+                  >
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                  </a>
+                  <a
+                    class="right carousel-control"
+                    href="#carouselTerra"
+                    data-slide="next"
+                  >
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                  </a>
+                </div>
+                <br />
+                <p>
+                  Poderosos dinosaurios terrestres con ataque y defensa
+                  imparable.
+                </p>
+
+                <button
+                  onclick="window.open('https://www.mercadolibre.com/tu-mazo-terra','_blank')"
+                  class="btn-big-cyan"
+                  style="margin-bottom: 10px"
+                >
+                  🛒 Comprar
+                </button>
+
+                <br />
+                <a
+                  href="#"
+                  data-toggle="modal"
+                  data-target="#modalTerra"
+                  style="
+                    color: cyan;
+                    text-decoration: underline;
+                    font-weight: bold;
+                  "
+                >
+                  Ver más
+                </a>
+              </div>
+            </div>
+            <!-- MAZO AQUATIC-AIR -->
+            <div class="col-sm-4">
+              <div class="deck-card">
+                <h2>Mazo Aquatic-Air</h2>
+                <div
+                  id="carouselAquaticAir"
+                  class="carousel slide"
+                  data-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img
+                        src="assets/images/2.jpeg"
+                        class="img-responsive center-block"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="assets/images/3b.jpeg"
+                        class="img-responsive center-block"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Controles -->
+                  <a
+                    class="left carousel-control"
+                    href="#carouselAquaticAir"
+                    data-slide="prev"
+                  >
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                  </a>
+                  <a
+                    class="right carousel-control"
+                    href="#carouselAquaticAir"
+                    data-slide="next"
+                  >
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                  </a>
+                </div>
+                <br />
+                <p>
+                  Poderosos dinosaurios acuaticos y voladores movimiento y
+                  ferocidad.
+                </p>
+
+                <button
+                  onclick="window.open('https://www.mercadolibre.com/tu-mazo-acuatic-air','_blank')"
+                  class="btn-big-cyan"
+                  style="margin-bottom: 10px"
+                >
+                  🛒 Comprar
+                </button>
+
+                <br />
+                <a
+                  href="#"
+                  data-toggle="modal"
+                  data-target="#modalAquaticAir"
+                  style="
+                    color: cyan;
+                    text-decoration: underline;
+                    font-weight: bold;
+                  "
+                >
+                  Ver más
+                </a>
+              </div>
+            </div>
+            <!-- MAZO COMBO -->
+            <div class="col-sm-4">
+              <div class="deck-card">
+                <h2>Combo Terra y Aquatic-air</h2>
+                <div
+                  id="carouselCombo"
+                  class="carousel slide"
+                  data-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <img
+                        src="assets/images/2.jpeg"
+                        class="img-responsive center-block"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="assets/images/3a.jpeg"
+                        class="img-responsive center-block"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="assets/images/3b.jpeg"
+                        class="img-responsive center-block"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Controles -->
+                  <a
+                    class="left carousel-control"
+                    href="#carouselCombo"
+                    data-slide="prev"
+                  >
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                  </a>
+                  <a
+                    class="right carousel-control"
+                    href="#carouselCombo"
+                    data-slide="next"
+                  >
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                  </a>
+                </div>
+                <br />
+                <p>Combo por ambos mazos</p>
+                <br />
+                <button
+                  onclick="window.open('https://www.mercadolibre.com/tu-mazo-acuatic-air','_blank')"
+                  class="btn-big-cyan"
+                  style="margin-bottom: 10px"
+                >
+                  🛒 Comprar
+                </button>
+
+                <br />
+                <a
+                  href="#"
+                  data-toggle="modal"
+                  data-target="#modalCombo"
+                  style="
+                    color: cyan;
+                    text-decoration: underline;
+                    font-weight: bold;
+                  "
+                >
+                  Ver más
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- MODAL TERRA -->
+    <div id="modalTerra" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span>
+              El mazo <strong>Terra</strong> contiene
+              <strong>20 cartas</strong> en total:
+            </span>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Cerrar"
+            >
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="list-info">
+              <p>
+                <strong>🦕 14 Dinosaurios:</strong>
+              </p>
+              <p>
+                • Tyrannosaurus Rex<br />
+                • Triceratops<br />
+                • Ankylosaurus<br />
+                • Stegosaurus<br />
+                • Brachiosaurus<br />
+                • Parasaurolophus<br />
+                • Pyroraptor<br />
+                • Velociraptor<br />
+                • Compsognathus<br />
+                • Carnotaurus<br />
+                • Dilophosaurus<br />
+                • Atrociraptor<br />
+                • Giganotosaurus<br />
+                • Tortuga legendaria<br />
+              </p>
+              <p>
+                <strong>💥 6 Cartas Trampa:</strong>
+              </p>
+              • Orbe del renacer<br />
+              • Cryptex arcano<br />
+              • Elixir de vida<br />
+              • T-rex furia roja<br />
+              • Orbe de cristal<br />
+              • Escudo magico
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL AQUATIC-AIR -->
+    <div id="modalAquaticAir" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span>
+              El mazo <strong>Aquatic-air</strong> contiene
+              <strong>20 cartas</strong> en total:
+            </span>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Cerrar"
+            >
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="list-info">
+              <p>
+                <strong>🦕 14 Dinosaurios:</strong>
+              </p>
+              <p>
+                • Plesiosaurus<br />
+                • Ichthyosaurus<br />
+                • Rhamphorhynchus<br />
+                • Mosasaurus<br />
+                • Hesperornis<br />
+                • Spinosaurus<br />
+                • Pterodactylus<br />
+                • Quetzalcoatlus<br />
+                • Dimorphodon<br />
+                • Elasmosaurus<br />
+                • Microraptor<br />
+                • Baryonyx<br />
+                • Halszkaraptor<br />
+                • Dragon legendario<br /><br />
+              </p>
+              <p>
+                <strong>💥 6 Cartas Trampa:</strong>
+              </p>
+              • Escudo de hielo<br />
+              • Vuelo del eclipse<br />
+              • Caos primordial<br />
+              • T-rex furia azul<br />
+              • Furia del alfa<br />
+              • Grieta temporal
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL COMBO -->
+    <div id="modalCombo" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span>
+              El mazo <strong>Combo</strong> contiene
+              <strong>40 cartas</strong> en total:
+            </span>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Cerrar"
+            >
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="list-info">
+              <p>
+                <strong>🦕 28 Dinosaurios:</strong>
+              </p>
+              <p>
+                • Plesiosaurus • Tyrannosaurus Rex<br />
+                • Ichthyosaurus • Triceratops<br />
+                • Rhamphorhynchus • Ankylosaurus<br />
+                • Mosasaurus • Stegosaurus<br />
+                • Hesperornis • Brachiosaurus<br />
+                • Spinosaurus • Parasaurolophus<br />
+                • Pterodactylus • Pyroraptor<br />
+                • Quetzalcoatlus • Velociraptor<br />
+                • Dimorphodon • Compsognathus<br />
+                • Elasmosaurus • Carnotaurus<br />
+                • Microraptor • Dilophosaurus<br />
+                • Baryonyx • Atrociraptor<br />
+                • Halszkaraptor • Giganotosaurus<br />
+                • Dragon legendario • Tortuga legendaria<br />
+                <br />
+              </p>
+              <p>
+                <strong>💥 6 Cartas Trampa:</strong>
+              </p>
+              • Escudo de hielo • Orbe del renacer<br />
+              • Vuelo del eclipse • Cryptex arcano<br />
+              • Caos primordial • Elixir de vida<br />
+              • T-rex furia azul • T-rex furia roja<br />
+              • Furia del alfa • Orbe de cristal<br />
+              • Grieta temporal • Escudo magico
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACTO -->
+    <div class="content-block" id="contact">
+      <div class="container text-center">
+        <header class="block-heading cleafix">
+          <h1>Contacto</h1>
+          <p>Hacé clic en el logo para hablar con nosotros 📱</p>
+          <section>
+            <a
+              href="https://wa.me/5491136450184?text=Hola!%20Quiero%20comprar%20cartas%20de%20Prehistoricart."
+              target="_blank"
+              class="whatsapp-logo"
+            >
+              <img src="assets/images/whatsapp-logo.svg" alt="WhatsApp Logo" />
+            </a>
+          </section>
+        </header>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="content-block" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6">&copy; Copyright Prehistoricart</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
